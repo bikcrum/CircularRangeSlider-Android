@@ -68,7 +68,7 @@ Simply add the View to your layout xml
 </com.bikcrum.circularrangeslider.CircularRangeSlider>
 ```
 
-### Add listener
+### Add onRangeChange listener
 ```java
 
 CircularRangeSlider mCircularRangeSlider.setOnRangeChangeListener(new CircularRangeSlider.OnRangeChangeListener() {
