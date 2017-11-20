@@ -41,7 +41,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.33"
+                android:layout_weight="0.4"
                 android:orientation="vertical">
 
                 <Button
@@ -72,7 +72,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:layout_weight="0.33"
+                android:layout_weight="0.3"
                 android:orientation="vertical"
                 android:padding="5dp">
 
@@ -81,14 +81,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="true"
-                    android:text="progress" />
+                    android:layout_marginBottom="10dp"
+                    android:text="Progress" />
 
                 <CheckBox
                     android:id="@+id/checkbox_label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="true"
-                    android:text="label" />
+                    android:text="Label\n(Customizable)" />
 
             </LinearLayout>
 
@@ -96,7 +97,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:layout_weight="0.33"
+                android:layout_weight="0.3"
                 android:orientation="vertical"
                 android:padding="5dp">
 
@@ -111,7 +112,7 @@
                     android:id="@+id/step_length"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:max="20"
+                    android:max="40"
                     android:progress="5" />
 
             </LinearLayout>
@@ -137,7 +138,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
-                android:padding="10dp"
+                android:padding="5dp"
                 android:text="Start Index: 0" />
 
             <TextView
@@ -145,7 +146,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
-                android:padding="10dp"
+                android:padding="5dp"
                 android:text="End Index: 1" />
 
         </LinearLayout>
@@ -161,15 +162,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
-                android:padding="10dp"
-                android:text="Progress: 0" />
+                android:padding="5dp"
+                android:text="Progress: 0\n(Customizable)" />
 
             <TextView
                 android:id="@+id/in_range"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
-                android:padding="10dp"
+                android:padding="5dp"
                 android:text="Inside Range: True" />
 
         </LinearLayout>
@@ -184,6 +185,7 @@
         android:layout_above="@id/controller"
         android:layout_below="@+id/info"
         app:circleColor="@color/colorPrimary"
+        app:progressColor="#66ff00"
         app:labelSize="20sp"
         app:progressEnabled="true" />
 

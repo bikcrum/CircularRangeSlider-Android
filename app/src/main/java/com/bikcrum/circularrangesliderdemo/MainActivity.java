@@ -105,11 +105,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 mCircularRangeSlider.setProgress(i);
-                mProgress.setText(String.format(Locale.ENGLISH, "Progress: %.1f", i));
+                mProgress.setText(String.format(Locale.ENGLISH, "Progress: %.1f\n(Customizable)", i));
                 i = (i + 0.05f) % mCircularRangeSlider.getMax();
-
-                int startIndex = mCircularRangeSlider.getStartIndex();
-                int endIndex = mCircularRangeSlider.getEndIndex();
 
                 if (mCircularRangeSlider.isProgressInsideRange()) {
                     mInsideRange.setText("Inside Range: True");
@@ -147,8 +144,9 @@ public class MainActivity extends AppCompatActivity {
 
         mSeekbarStepLength.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
-            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                mCircularRangeSlider.setStepLength(progress);
+                mCircularRangeSlider.setStartIndexStepLength(progress * 2);
             }
 
             @Override

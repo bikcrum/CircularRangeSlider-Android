@@ -89,7 +89,7 @@ public class CircularRangeSlider extends View {
 
 
     public void setLabelVisibility(int visibility) {
-        hideLabel = visibility == View.VISIBLE;
+        hideLabel = visibility != View.VISIBLE;
         invalidate();
     }
 
