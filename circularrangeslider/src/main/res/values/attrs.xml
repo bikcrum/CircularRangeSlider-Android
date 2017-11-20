@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircularRangeSlider">
+
+        <attr name="max" format="integer" />
+        <attr name="stepLength" format="dimension" />
+        <attr name="labels" format="reference" />
+        <attr name="labelColor" format="color" />
+        <attr name="labelSize" format="dimension" />
+        <attr name="hideLabel" format="boolean" />
+
+        <attr name="circleColor" format="color" />
+
+        <attr name="borderColor" format="color" />
+        <attr name="borderWidth" format="dimension" />
+
+        <attr name="sectorColor" format="color" />
+
+        <attr name="sliderColor" format="reference|color" />
+        <attr name="sliderWidth" format="dimension" />
+        <attr name="sliderLength" format="dimension" />
+
+        <attr name="axisRadius" format="dimension" />
+        <attr name="axisColor" format="color" />
+
+        <attr name="startFrom" format="integer">
+            <enum name="top" value="1" />
+            <enum name="bottom" value="3" />
+            <enum name="left" value="4" />
+            <enum name="right" value="2" />
+        </attr>
+
+        <attr name="startIndexStepLength" format="dimension" />
+        <attr name="startIndexStepWidth" format="dimension" />
+        <attr name="startIndexStepColor" format="color" />
+
+        <attr name="progress" format="float" />
+        <attr name="progressEnabled" format="boolean" />
+        <attr name="progressColor" format="color" />
+
+        <attr name="startIndex" format="integer" />
+        <attr name="endIndex" format="integer" />
+
+        <attr name="enabled" format="boolean" />
+
+    </declare-styleable>
+
+</resources>
