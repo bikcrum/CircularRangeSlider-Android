@@ -1,4 +1,4 @@
-# CircularRangeSliderDemo
+# CircularRangeSlider-Android
 
 ★ Contains two thumbs that slides in circle to provide the range</br>
 ★ You can add as many as steps as per your need</br>
