@@ -137,7 +137,7 @@ handler.post(new Runnable() {
         app:labelSize="20sp"
         app:labels="@array/labels"
         app:max="7"
-        app:progress="8.5"
+        app:progress="1.5"
         app:progressColor="#ffffff"
         app:progressEnabled="true"
         app:sectorColor="#54fc888c"
