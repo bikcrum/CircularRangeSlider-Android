@@ -5,9 +5,7 @@ CircularTimerClock is an android version based on the ios view of the build-in c
 With CircularTimeView you can set timer between hours and minutes. 
 Your can change the interval of of the clock between 1 minute to 60 minutes and retrieve current timer
 
-![circular timer clock](https://user-images.githubusercontent.com/11720098/31091386-7882e1ca-a7b3-11e7-8677-43a6689954af.gif)
-
-<iframe src='https://gfycat.com/ifr/PoisedSlimyHyracotherium' frameborder='0' scrolling='no' width='420' height='694' allowfullscreen></iframe>
+<a href="https://imgflip.com/gif/1zpcf0"><img src="https://i.imgflip.com/1zpcf0.gif" title="made at imgflip.com"/></a>
 
 ## Attributes
 
