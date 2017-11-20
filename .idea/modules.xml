@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CircularRangeSliderDemo.iml" filepath="$PROJECT_DIR$/CircularRangeSliderDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/CircularRangeSlider-Android.iml" filepath="$PROJECT_DIR$/.idea/CircularRangeSlider-Android.iml" />
+      <module fileurl="file://D:\CircularRangeSlider-Android\CircularRangeSliderDemo.iml" filepath="D:\CircularRangeSlider-Android\CircularRangeSliderDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://D:\CircularRangeSlider-Android\app\app.iml" filepath="D:\CircularRangeSlider-Android\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/circularrangeslider/circularrangeslider.iml" filepath="$PROJECT_DIR$/circularrangeslider/circularrangeslider.iml" />
+      <module fileurl="file://D:\CircularRangeSlider-Android\circularrangeslider\circularrangeslider.iml" filepath="D:\CircularRangeSlider-Android\circularrangeslider\circularrangeslider.iml" />
     </modules>
   </component>
 </project>
