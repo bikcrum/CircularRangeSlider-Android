@@ -1,5 +1,8 @@
 # CircularRangeSlider-Android
 
+Demo Video: https://www.youtube.com/watch?v=Tp8nrwnppM0&feature=youtu.be
+Playstore app: https://play.google.com/store/apps/details?id=com.bikcrum.circularrangesliderdemo
+
 ★ Contains two thumbs that slides in circle to provide the range</br>
 ★ You can add as many as steps as per your need</br>
 ★ Add running progress to it</br>
