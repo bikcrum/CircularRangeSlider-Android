@@ -298,6 +298,11 @@ public class CircularRangeSlider extends View {
         invalidate();
     }
 
+    public void setLabelColor(int color) {
+        labelColor = color;
+        invalidate();
+    }
+
     public int getMax() {
         return max;
     }
@@ -317,7 +322,7 @@ public class CircularRangeSlider extends View {
         borderColor = a.getColor(R.styleable.CircularRangeSlider_borderColor, Color.parseColor("#e0e0e0"));
         borderWidth = a.getDimension(R.styleable.CircularRangeSlider_borderWidth, 5);
 
-        sectorColor = a.getColor(R.styleable.CircularRangeSlider_sectorColor, Color.parseColor("#2c797979"));
+        sectorColor = a.getColor(R.styleable.CircularRangeSlider_sectorColor, Color.parseColor("#45000000"));
 
         sliderColor = a.getColorStateList(R.styleable.CircularRangeSlider_sliderColor);
 
@@ -462,9 +467,14 @@ public class CircularRangeSlider extends View {
                 paint.getTextBounds(label, 0, label.length(), bounds);
 
                 double boundRadius = Math.sqrt(bounds.width() * bounds.width() + bounds.height() * bounds.height()) / 2;
-
-                int x = (int) (centerX + Math.cos(angRad + Math.toRadians(transformAngle)) * (radius - startIndexStepLength - boundRadius));
-                int y = (int) (centerY + Math.sin(angRad + Math.toRadians(transformAngle)) * (radius - startIndexStepLength - boundRadius));
+                float padding;
+                if (i == 0) {
+                    padding = startIndexStepLength;
+                } else {
+                    padding = stepLength;
+                }
+                int x = (int) (centerX + Math.cos(angRad + Math.toRadians(transformAngle)) * (radius - padding - boundRadius));
+                int y = (int) (centerY + Math.sin(angRad + Math.toRadians(transformAngle)) * (radius - padding - boundRadius));
                 canvas.rotate(-transformAngle, centerX, centerY);
                 canvas.drawText(label, x - bounds.width() / 2, y + bounds.height() / 2, paint);
                 canvas.rotate(transformAngle, centerX, centerY);

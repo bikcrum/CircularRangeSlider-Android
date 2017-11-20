@@ -177,7 +177,6 @@
 
     </LinearLayout>
 
-
     <com.bikcrum.circularrangeslider.CircularRangeSlider
         android:id="@+id/circular_range_slider"
         android:layout_width="wrap_content"
@@ -185,9 +184,7 @@
         android:layout_above="@id/controller"
         android:layout_below="@+id/info"
         app:circleColor="@color/colorPrimary"
-        app:progressColor="#66ff00"
         app:labelSize="20sp"
         app:progressEnabled="true" />
-
 
 </RelativeLayout>

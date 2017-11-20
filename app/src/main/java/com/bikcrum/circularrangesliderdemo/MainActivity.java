@@ -212,7 +212,7 @@ public class MainActivity extends AppCompatActivity {
                 .setPositiveButton("OK", new ColorPickerClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int selectedColor, Integer[] allColors) {
-                        mCircularRangeSlider.setCircleColor(selectedColor);
+                        mCircularRangeSlider.setLabelColor(selectedColor);
                         view.setBackgroundColor(getTextColor(selectedColor));
                         ((Button) view).setTextColor(selectedColor);
                     }
