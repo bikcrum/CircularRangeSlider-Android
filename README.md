@@ -88,3 +88,33 @@ CircularRangeSlider mCircularRangeSlider.setOnRangeChangeListener(new CircularRa
      }
 });
 ```
+###Enable Progress
+```
+<com.bikcrum.circularrangeslider.CircularRangeSlider
+     android:id="@+id/circular_range_slider"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     app:progressEnabled="true">
+        
+</com.bikcrum.circularrangeslider.CircularRangeSlider>
+```
+### Change Progress Example
+```java
+float i = 0; /* Globally declared */
+
+//This will increment progress by 0.5 every 1 second.
+Handler handler = new Handler();
+handler.post(new Runnable() {
+            @Override
+            public void run() {
+               //set progress
+               mCircularRangeSlider.setProgress(i);
+               
+               //progress can go beyond maximum steps however go in a loop
+               i = (i + 0.5) % mCircularRangeSlider.getMax();
+
+               //repeat above after 1 second
+               handler.postDelayed(this, 1000);
+            }
+        });
+```
