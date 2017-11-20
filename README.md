@@ -105,16 +105,16 @@ float i = 0; /* Globally declared */
 //This will increment progress by 0.5 every 1 second.
 Handler handler = new Handler();
 handler.post(new Runnable() {
-            @Override
-            public void run() {
-               //set progress
-               mCircularRangeSlider.setProgress(i);
+     @Override
+     public void run() {
+          //set progress
+          mCircularRangeSlider.setProgress(i);
                
-               //progress can go beyond maximum steps however go in a loop
-               i = (i + 0.5) % mCircularRangeSlider.getMax();
+          //progress can't go beyond maximum steps however go in a loop
+          i = (i + 0.5) % mCircularRangeSlider.getMax();
 
-               //repeat above after 1 second
-               handler.postDelayed(this, 1000);
-            }
-        });
+          //repeat above after 1 second
+          handler.postDelayed(this, 1000);
+     }
+});
 ```
