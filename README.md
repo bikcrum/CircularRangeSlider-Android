@@ -120,7 +120,6 @@ handler.post(new Runnable() {
 ```
 
 ### Example of all the attributes
-Simply add the View to your layout xml
 
 ```
   <com.bikcrum.circularrangeslider.CircularRangeSlider
@@ -154,4 +153,5 @@ Simply add the View to your layout xml
 
     </com.bikcrum.circularrangeslider.CircularRangeSlider>
 ```
-
+### which looks like this 
+<a href="https://imgbb.com/"><img src="https://image.ibb.co/iVMJ2m/lookslikethis.png" alt="lookslikethis" border="0"></a>
