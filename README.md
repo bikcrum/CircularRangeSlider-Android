@@ -7,6 +7,8 @@ Your can change the interval of of the clock between 1 minute to 60 minutes and 
 
 ![circular timer clock](https://user-images.githubusercontent.com/11720098/31091386-7882e1ca-a7b3-11e7-8677-43a6689954af.gif)
 
+<iframe src='https://gfycat.com/ifr/PoisedSlimyHyracotherium' frameborder='0' scrolling='no' width='420' height='694' allowfullscreen></iframe>
+
 ## Attributes
 
 | Attr  | format | decription |
