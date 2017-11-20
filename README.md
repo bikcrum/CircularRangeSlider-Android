@@ -92,7 +92,7 @@ CircularRangeSlider mCircularRangeSlider.setOnRangeChangeListener(new CircularRa
      }
 });
 ```
-###Enable Progress
+### Enable Progress
 ```
 <com.bikcrum.circularrangeslider.CircularRangeSlider
      android:id="@+id/circular_range_slider"
