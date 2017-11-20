@@ -1,9 +1,12 @@
 # CircularRangeSliderDemo
 
-Circular Range Slider that can set timer range between hours.
-CircularTimerClock is an android version based on the ios view of the build-in clock.
-With CircularTimeView you can set timer between hours and minutes. 
-Your can change the interval of of the clock between 1 minute to 60 minutes and retrieve current timer
+★ Contains two thumbs that slides in circle to provide the range.
+★ You can add as many as steps as per your need.
+★ Add running progress to it
+★ Use custom label for each step
+★ Know whether the progress is inside the range or not just from build-in functions
+★ Change color of circle, progress, steps, axis etc
+★ Change width and length of border, steps, axis etc
 
 <a href="https://thumbs.gfycat.com/PoisedSlimyHyracotherium-size_restricted"><img src="https://thumbs.gfycat.com/PoisedSlimyHyracotherium-size_restricted.gif" title="Circular Range Slider Demo"/></a>
 
@@ -11,32 +14,29 @@ Your can change the interval of of the clock between 1 minute to 60 minutes and 
 
 | Attr  | format | decription |
 | ------------- | ------------- | ------------- |
-| start_hour  | integer  | An integer between 1 to 12  |
-| end_hour  | integer  | An integer between 1 to 12  |
-| start_minutes  | integer  | An integer between 0 to 59  |
-| end_minutes  | integer  | An integer between 0 to 59  |
-| clock_time_interval  | integer  | An integer between 0 to 59. The interval of the clock jump that time can be display|
-| clock_tick_interval  | integer  | An integer between 0 to 59. The clock tick interval of the clock |
-| clock_hour_color  | color  | The color of the hours clock  |
-| clock_tick_color  | color  | The color of the clock ticks  |
-| border_color  | color  | The color of the clock border  |
-| arc_gradient_color_start  | color  | The start arc color gradient  |
-| arc_gradient_color_end  | color  | the end color gradient  |
-| start_thumb_color  | color  | The color of the start thumb |
-| end_thumb_color  | color  | The color of the end thumb  |
-|  arc_color | color  | The arc color between start and end thumbs  |
-|  start_thumb_size | dimention  | The start thumb size  |
-|  end_thumb_size | dimention  | The end thumb size  |
-| arc_dash_size  | dimention  | The thickness of the line between the start and end  |
-| border_thickness  | dimention  | The thickness of the clock border  |
-| thumb_size  | dimention  | The size of the thumbs  |
-| hours_size  | dimention  | The size of the clock hours  |
-| start_time_is_am  | boolean  | Is the start time is AM  |
-| end_time_is_am  | boolean  | Is the end time is AM  |
-| is_clock_inside  | boolean  | Is the clock view insie  |
-| start_thumb_image  | reference  | the image drawable of the start thumb  |
-| end_thumb_image  | reference  | the image drawable of the end thumb  |
-| clock_background_image  | reference  | The image drawable of the backgound clock  |
+| max  | integer  | Maximum number of steps, 3 to above |
+| stepLength  | dimension  | Change length of step  |
+| labels  | reference  | An array entries for label in each step, Default is indices  |
+| label_color  | color  | Default is "#ffff00" |
+| labelSize  | dimension  | Default is 30 px |
+| hideLabel  | boolean  | Default is false |
+| circleColor  | color  | Default is "#4db6ac" (greenish) |
+| borderColor  | color  | Default is "#e0e0e0"  |
+| borderWidth | dimension  | 5px  |
+| sectorColor  | color  | Sector is formed between sliders region, Default color is "#45000000" (Note: Provide non-opaque color)  |
+| sliderColor  | color, colorState  | Default is yellowish |
+| sliderWidth  | dimension  | Default is 5 px  |
+|  sliderLength | dimension  | Default is 20 px |
+|  axisRadius | dimension  | Center, Default is 8 px  |
+|  axisColor | color  | Center, Default is white |
+| startFrom  | integer  | Where startIndex should locate. Default is top among (top,bottom,left,right)  |
+| startIndexStepLength | dimension  | Default is twice stepLength  |
+| startIndexStepWidth  | dimension  | Default is 1.5 times borderWidth  |
+| progress | float  | Default is 0  |
+| progressEnabled  | boolean  | Default is false |
+| progressColor  | color  | Default is "#d50000" (reddish)  |
+| startIndex | integer  | Default is 0 |
+| endIndex  | integer  | Default is 1 |
 
 # How to use
 
