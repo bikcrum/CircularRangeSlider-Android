@@ -68,7 +68,7 @@ Simply add the View to your layout xml
 </com.bikcrum.circularrangeslider.CircularRangeSlider>
 ```
 
-### Add listeners
+### Add listener
 ```java
 
 CircularRangeSlider mCircularRangeSlider.setOnRangeChangeListener(new CircularRangeSlider.OnRangeChangeListener() {
@@ -100,7 +100,7 @@ CircularRangeSlider mCircularRangeSlider.setOnRangeChangeListener(new CircularRa
 ```
 ### Change Progress Example
 ```java
-float i = 0; /* Globally declared */
+float i = 0.0f; /* Globally declared */
 
 //This will increment progress by 0.5 every 1 second.
 Handler handler = new Handler();
@@ -111,10 +111,47 @@ handler.post(new Runnable() {
           mCircularRangeSlider.setProgress(i);
                
           //progress can't go beyond maximum steps however go in a loop
-          i = (i + 0.5) % mCircularRangeSlider.getMax();
+          i = (i + 0.5f) % mCircularRangeSlider.getMax();
 
           //repeat above after 1 second
           handler.postDelayed(this, 1000);
      }
 });
 ```
+
+### Example of all the attributes
+Simply add the View to your layout xml
+
+```
+  <com.bikcrum.circularrangeslider.CircularRangeSlider
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:axisColor="#00ffef"
+        app:axisRadius="10dp"
+        app:borderColor="#00ffef"
+        app:borderWidth="5dp"
+        app:circleColor="#4b4b4b"
+        app:enabled="true"
+        app:endIndex="3"
+        app:hideLabel="false"
+        app:labelColor="#00ffef"
+        app:labelSize="20sp"
+        app:labels="@array/labels"
+        app:max="7"
+        app:progress="8.5"
+        app:progressColor="#ffffff"
+        app:progressEnabled="true"
+        app:sectorColor="#54fc888c"
+        app:sliderColor="#ff0008"
+        app:sliderLength="20dp"
+        app:sliderWidth="8dp"
+        app:startFrom="top"
+        app:startIndex="1"
+        app:startIndexStepColor="#00ffef"
+        app:startIndexStepLength="20dp"
+        app:startIndexStepWidth="8dp"
+        app:stepLength="8dp">
+
+    </com.bikcrum.circularrangeslider.CircularRangeSlider>
+```
+
