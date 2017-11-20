@@ -40,19 +40,20 @@
 
 # How to use
 
-### Add root build.gradle
+### Add root build.gradle (Project)
 ```
-repositories {
-     maven {
-         url "https://jitpack.io"
-     }
+allprojects {
+    repositories {
+        //add this line
+        maven { url "https://jitpack.io" }
+    }
 }
 ```
 
-### Add build.gradle
+### Add build.gradle (Module)
 ```
 dependencies {
-   
+    compile 'com.github.bikcrum:CircularRangeSlider-Android:1.0'
 }
 ```
 
