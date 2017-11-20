@@ -1,12 +1,12 @@
 # CircularRangeSliderDemo
 
-★ Contains two thumbs that slides in circle to provide the range.
-★ You can add as many as steps as per your need.
-★ Add running progress to it
-★ Use custom label for each step
-★ Know whether the progress is inside the range or not just from build-in functions
-★ Change color of circle, progress, steps, axis etc
-★ Change width and length of border, steps, axis etc
+★ Contains two thumbs that slides in circle to provide the range</br>
+★ You can add as many as steps as per your need</br>
+★ Add running progress to it</br>
+★ Use custom label for each step</br>
+★ Know whether the progress is inside the range or not just from build-in functions</br>
+★ Change color of circle, progress, steps, axis etc</br>
+★ Change width and length of border, steps, axis etc</br>
 
 <a href="https://thumbs.gfycat.com/PoisedSlimyHyracotherium-size_restricted"><img src="https://thumbs.gfycat.com/PoisedSlimyHyracotherium-size_restricted.gif" title="Circular Range Slider Demo"/></a>
 
@@ -52,7 +52,7 @@ repositories {
 ### Add build.gradle
 ```
 dependencies {
-    compile 'com.github.giliy:CircularTimerClock-Android:0.1.1'
+   
 }
 ```
 
@@ -60,48 +60,31 @@ dependencies {
 Simply add the View to your layout xml
 
 ```
- <giliy.com.circulartimerclock.CircularTimerClock
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/circular_clock"
-        android:layout_gravity="center"
-        timer:arc_dash_size="40dp"
-        timer:start_hour="5"
-        timer:start_minutes="20"
-        timer:end_hour="9"
-        timer:end_minutes="30"
-        timer:clock_time_interval="5"
-        timer:clock_tick_interval="15"
-        timer:clock_hour_color="#FFF"
-        timer:clock_tick_color="#FFF"
-        timer:hours_size="18sp"
-        timer:start_time_is_am="true"
-        timer:end_time_is_am="false"
-        timer:is_clock_inside="true"
-        timer:border_thickness="40dp"
-        timer:border_color="#e7e7e7"
-        timer:arc_gradient_color_start="#78f8b8"
-        timer:arc_gradient_color_end="#00964b"
-        timer:clock_background_image="@drawable/sunrise"
-        timer:start_thumb_image="@drawable/circle_toggle_shape"
-        timer:end_thumb_image="@drawable/circle_toggle_shape"
-        timer:thumb_size="35dp" >
-
-    </giliy.com.circulartimerclock.CircularTimerClock>
+<com.bikcrum.circularrangeslider.CircularRangeSlider
+     android:id="@+id/circular_range_slider"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content">
+        
+</com.bikcrum.circularrangeslider.CircularRangeSlider>
 ```
-To retrieve the time simply call the view from your activity like this
+
+### Add listeners
 ```java
-CircularTimerClock clock = (CircularTimerClock) findViewById(R.id.circular_clock);
-        clock.setOnTimeChangedListener(new CircularTimerClock.ontTimeChanged() {
-            @Override
-            public void onStartTimeChange(String time, int hour, int minutes,boolean isAM) {
-                Log.d("time: ",""+time);
 
-            }
+CircularRangeSlider mCircularRangeSlider.setOnRangeChangeListener(new CircularRangeSlider.OnRangeChangeListener() {
+     @Override 
+     public void onRangePress(int startIndex, int endIndex) {
+          //called when user starts changing slider
+     }
 
-            @Override
-            public void onEndTimeChange(String time, int hour, int minutes, boolean isAM) {
-                Log.d("time: ",""+time);
-            }
-        });
+     @Override
+     public void onRangeChange(int startIndex, int endIndex) {
+          //called while user is changing slider
+     }
+
+     @Override
+     public void onRangeRelease(int startIndex, int endIndex) {
+          //called when user releases slider
+     }
+});
 ```
