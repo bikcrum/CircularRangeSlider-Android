@@ -1,8 +1,13 @@
 # CircularRangeSlider-Android
 
+### Description
+Have you used seekbar in android? It is just like that but circular and contains two sliders. - You can use to show range and let something happen in that range. 
+For example: You have an chat messaging app that only works during day. You may use this to mark start hour and end hour at which app remains active.
+ 
 Demo Video: https://www.youtube.com/watch?v=Tp8nrwnppM0 </br>
 Playstore app: https://play.google.com/store/apps/details?id=com.bikcrum.circularrangesliderdemo </br>
 
+### Features
 ★ Contains two thumbs that slides in circle to provide the range</br>
 ★ You can add as many as steps as per your need</br>
 ★ Add running progress to it</br>
