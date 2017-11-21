@@ -1,7 +1,7 @@
 # CircularRangeSlider-Android
 
-Demo Video: https://goo.gl/ADLrBV </br>
-Playstore app: https://goo.gl/Y5kYGq </br>
+Demo Video: https://www.youtube.com/watch?v=Tp8nrwnppM0 </br>
+Playstore app: https://play.google.com/store/apps/details?id=com.bikcrum.circularrangesliderdemo </br>
 
 ★ Contains two thumbs that slides in circle to provide the range</br>
 ★ You can add as many as steps as per your need</br>
@@ -47,6 +47,7 @@ Playstore app: https://goo.gl/Y5kYGq </br>
 ```
 allprojects {
     repositories {
+        ...
         //add this line
         maven { url "https://jitpack.io" }
     }
@@ -56,6 +57,7 @@ allprojects {
 ### Add build.gradle (Module)
 ```
 dependencies {
+    ...
     compile 'com.github.bikcrum:CircularRangeSlider-Android:1.0'
 }
 ```
