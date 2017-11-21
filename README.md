@@ -48,7 +48,7 @@ Playstore app: https://play.google.com/store/apps/details?id=com.bikcrum.circula
 allprojects {
     repositories {
         ...
-        //add this line
+        // add this line
         maven { url "https://jitpack.io" }
     }
 }
@@ -58,6 +58,7 @@ allprojects {
 ```
 dependencies {
     ...
+    // Also add this line
     compile 'com.github.bikcrum:CircularRangeSlider-Android:1.0'
 }
 ```
