@@ -165,5 +165,21 @@ handler.post(new Runnable() {
 
     </com.bikcrum.circularrangeslider.CircularRangeSlider>
 ```
+
+### In your string.xml file
+```
+<resources>
+    <string name="app_name">Circular Range Slider Demo</string>
+    <string-array name="labels">
+        <item>SUN</item>
+        <item>MON</item>
+        <item>TUE</item>
+        <item>WED</item>
+        <item>THU</item>
+        <item>FRI</item>
+        <item>SAT</item>
+    </string-array>
+</resources>
+```
 ### which looks like this 
 <a href="https://imgbb.com/"><img src="https://image.ibb.co/iVMJ2m/lookslikethis.png" alt="lookslikethis" border="0"></a>
