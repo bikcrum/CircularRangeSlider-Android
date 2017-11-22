@@ -169,7 +169,7 @@ handler.post(new Runnable() {
 ### In your string.xml file
 ```
 <resources>
-    <string name="app_name">Circular Range Slider Demo</string>
+    ...
     <string-array name="labels">
         <item>SUN</item>
         <item>MON</item>
