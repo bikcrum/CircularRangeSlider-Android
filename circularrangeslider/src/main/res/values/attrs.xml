@@ -8,7 +8,9 @@
         <attr name="labels" format="reference" />
         <attr name="labelColor" format="color" />
         <attr name="labelSize" format="dimension" />
+        <attr name="labelInterval" format="integer" />
         <attr name="hideLabel" format="boolean" />
+        <attr name="hideZero" format="boolean" />
 
         <attr name="circleColor" format="color" />
 
@@ -30,6 +32,8 @@
             <enum name="left" value="4" />
             <enum name="right" value="2" />
         </attr>
+        <attr name="startAngle" format="float" />
+        <attr name="endAngle" format="float" />
 
         <attr name="startIndexStepLength" format="dimension" />
         <attr name="startIndexStepWidth" format="dimension" />
@@ -38,6 +42,7 @@
         <attr name="progress" format="float" />
         <attr name="progressEnabled" format="boolean" />
         <attr name="progressColor" format="color" />
+        <attr name="progressLength" format="float" />
 
         <attr name="startIndex" format="integer" />
         <attr name="endIndex" format="integer" />
